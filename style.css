@@ -1,0 +1,197 @@
+/* Author: Dante Villarreal /*
+
+/******* Container Styles *******/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  border: 1px solid black;
+  min-height: 100vh;
+  flex-flow: column wrap;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+.header-image-container{
+  display: flex;
+  justify-content: center; 
+  background-image: url("images/fishlogo.webp");
+
+}
+
+.words {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.facebook {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.facebook-pic {
+  display: flex;
+  flex-basis: 200px;
+}
+
+.facebook-words {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  background-color: white;
+  font-size: 105%;
+  color: #333333;
+}
+
+/******* Nav Styles *******/
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a {
+  padding: 18px;
+  color: #e0e9f0;
+  font-size: 0.9em;
+  transition: all 0.25s;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  background-color: #333333;
+  margin:0;
+}
+
+.navbutton {
+  display: flex;
+  margin: 0;
+}
+
+.navbutton > a:hover {
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.nav > a:hover, .nav > a:active {
+  background-color: #e0e9f0;
+  color: #333333;
+}
+
+/******* Header Styles *******/
+
+h1 {
+  float: left;
+  color: rgb(3, 223, 3);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/******* Paragraph Styles *******/
+
+p {
+  text-align: center;
+  color: #333333;
+}
+
+.facewords {
+  font-size: small;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/******* Image Styles /*******/
+
+.header-img {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.header-img-link {
+  padding: 0;
+}
+
+.manfishing {
+  width: 70vw;
+}
+
+/******* Button Styles *******/
+
+.facebook-button-link {
+  align-self: center;
+  color: black;
+  border-radius: 45px;
+  font-size: 150%;
+}
+
+.facebook-button {
+  margin-top: 1%;
+  font-size: 150%;
+  align-self: center;
+  padding: 4%;
+  padding-left: .5%;
+  padding-right: .5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.facebook-button:hover {
+  background-color: #566fb8;
+  box-shadow: 0px 15px 20px rgba(86, 111, 184, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.facebook-button-link:hover {
+  color: #fff;
+}
+
+.facebook-button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+
+/******** Footer Styles *******/
+
+footer {
+  padding: 1%;
+  font-size: x-small;
+  text-align: center;
+  color: #eeeeee;
+  background-color: #333333;
+  margin: 0;
+}

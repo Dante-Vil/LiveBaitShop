@@ -71,16 +71,15 @@ body {
 
 .main-bait-container {
   display: flex;
-  border: 2px dashed yellow;
   min-height: 100vh;
 }
 
 .bait-container {
   flex: 1;
   display: flex;
-  border: 1px dashed black;
   /*min-height: 100vh; */
   flex-flow: column;
+  margin-right: 0.5%;
 }
 
 .live-bait {
@@ -107,7 +106,6 @@ body {
 .bait-container2 {
   flex: 1;
   display: flex;
-  border: 1px dashed black;
   padding-bottom: 0.52%;
 }
 
@@ -141,6 +139,7 @@ a {
 .nav {
   display: flex;
   background-color: #333333;
+  
 }
 
 .navbutton {
@@ -202,18 +201,16 @@ p {
 
 .bait-names {
   text-align: left;
-  border: 1px solid green;
   flex: 2 40%;
-  padding-left: 2%;
+  padding-left: 4%;
 }
 
 .bait-prices {
   flex: 2 40%;
   text-align: right;
-  border: 1px solid green;
   font-style: italic;
   color: #363536;
-  padding-right: 2%;
+  padding-right: 4%;
 }
 
 /******* Image Styles /*******/
@@ -328,5 +325,9 @@ footer {
 
   .manfishing {
   width: 100vw;
-}
+  }
+
+  .main-bait-container {
+    flex-flow: column;
+  }
 }

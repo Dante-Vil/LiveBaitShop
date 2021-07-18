@@ -61,7 +61,7 @@ body {
 
 .facebook-words {
   display: flex;
-  justify-content: center;
+  
   flex-flow: column;
   background-color: #eeeeee;
   font-size: 105%;
@@ -72,6 +72,7 @@ body {
 .main-bait-container {
   display: flex;
   min-height: 100vh;
+  margin: 0.4%;
 }
 
 .bait-container {
@@ -84,7 +85,7 @@ body {
 
 .live-bait {
   flex: 0.5;
-  background-color: rgba(237, 237, 237, 0.8);
+  background-color: rgba(237, 237, 237, 0.85);
   padding-left: 0.5%;
   padding-right: 0.5%;
   height: 100%;
@@ -95,7 +96,7 @@ body {
 
 .cold-bait {
   flex: 0.5;
-  background-color: rgba(237, 237, 237, 0.8);
+  background-color: rgba(237, 237, 237, 0.85);
   padding-left: 0.5%;
   height: 100%;
   display: flex;
@@ -112,7 +113,7 @@ body {
 .live-fish {
   /*border: 1px solid blue;*/
   flex: 1;
-  background-color: rgba(237, 237, 237, 0.8);
+  background-color: rgba(237, 237, 237, 0.85);
   padding-left: 0.5%;
   padding-right: 0.5%;
   height: 100%;
@@ -128,8 +129,8 @@ a:link, a:visited {
 }
 
 a {
-  padding: 18px;
-  color: #e0e9f0;
+  padding: 17px;
+  color: #e0e9f0; 
   font-size: 0.9em;
   transition: all 0.25s;
   font-family: sans-serif;
@@ -139,7 +140,6 @@ a {
 .nav {
   display: flex;
   background-color: #333333;
-  
 }
 
 .navbutton {
@@ -147,7 +147,7 @@ a {
 }
 
 .navbutton > a:hover {
-  background-color: #eeeeee;
+  background-color: rgb(3, 223, 3);/*#eeeeee;*/
   color: #333333;
 }
 
@@ -178,10 +178,22 @@ h3 {
   margin-bottom: 0;
 }
 
+.facebook-h3 {
+  padding-top: 5%;
+}
+
+h4 {
+  color: red;
+  text-shadow: 1.3px 1.3px 1px black;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
 .bait-labels {
   flex: 100%;
+  margin-top: 1%;
   margin-bottom: 0;
-  margin-top: 0;
   padding: 0;
 }
 
@@ -197,6 +209,10 @@ p {
   font-size: small;
   margin-top: 0;
   padding-top: 0;
+}
+
+.adv {
+  margin-bottom: 20%;
 }
 
 .bait-names {
@@ -242,9 +258,9 @@ p {
 .facebook-button {
   margin-top: 4%;
   align-self: center;
-  padding: 5%;
-  padding-left: 2%;
-  padding-right: .7%;
+  padding: 3.8%;
+  padding-left: 1%;
+  padding-right: .1%;
   font-family: 'Roboto', sans-serif; 
   text-transform: uppercase;
   letter-spacing: 2.25px;
@@ -281,14 +297,18 @@ p {
 /******** Footer Styles *******/
 
 footer {
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   font-size: xx-small;
   text-align: center;
   color: #eeeeee;
   background-color: #333333;
   margin: 0;
 }
+
+/*****************************/
+/******* Media Queries *******/
+/*****************************/
 
 @media screen and (max-width: 568px) {
 
@@ -315,6 +335,10 @@ footer {
     padding: 5%;
   }
 
+  .adv {
+    margin-bottom: 0;
+  }
+
   .facebook-button {
     padding: 2%;
     padding-right: 0; 
@@ -323,11 +347,19 @@ footer {
     letter-spacing: 2px;
   }
 
+  .facebook-h3 {
+    padding-top: 10%;
+  }
+
   .manfishing {
   width: 100vw;
   }
 
   .main-bait-container {
-    flex-flow: column;
+    flex-flow: column; 
+  }
+
+  .live-bait, .cold-bait, .live-fish {
+    padding-bottom: 1%;
   }
 }

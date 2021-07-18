@@ -18,8 +18,22 @@ body {
   font-family: sans-serif;
   font-size: 1.1em;
   background-image: url("images/fishlogo.webp");
+  background-size: cover;
 }
 
+.main-container2 {
+  display: flex;
+  border: 1px solid black;
+  min-height: 100vh;
+  flex-flow: column wrap;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  background-image: url("images/bait.webp");
+  background-size: cover;
+}
 .header-image-container{
   display: flex;
   justify-content: center; 
@@ -30,6 +44,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
+  padding: 0.5%;
 }
 
 .facebook {
@@ -48,10 +63,37 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  background-color: white;
+  background-color: #eeeeee;
   font-size: 105%;
   color: #333333;
   padding: 2%;
+}
+
+.bait-container {
+  display: flex;
+  border: 1px dashed black;
+  min-height: 100vh;
+}
+
+.live-bait {
+  border: 1px solid red;
+  flex: 1;
+  background-color: rgba(237, 237, 237, 0.8);
+  padding-left: 0.5%;
+}
+
+.live-fish {
+  border: 1px solid blue;
+  flex: 1;
+  background-color: rgba(237, 237, 237, 0.8);
+  padding-left: 0.5%;
+}
+
+.cold-bait {
+  border: 1px solid green;
+  flex: 1;
+  background-color: rgba(237, 237, 237, 0.8);
+  padding-left: 0.5%;
 }
 
 /******* Nav Styles *******/
@@ -72,12 +114,10 @@ a {
 .nav {
   display: flex;
   background-color: #333333;
-  margin:0;
 }
 
 .navbutton {
   display: flex;
-  margin: 0;
 }
 
 .navbutton > a:hover {
@@ -101,8 +141,8 @@ h1 {
 
 h2 {
   text-align: center;
-  color: #292828;
-  text-shadow: 1px 1px 2px #333333;
+  color: #e0e9f0;
+  text-shadow: 1.3px 1.3px 1px black;
 }
 
 h3 {
@@ -147,21 +187,19 @@ p {
   align-self: center;
   color: black;
   border-radius: 45px;
-  font-size: 150%;
 }
 
 .facebook-button {
   margin-top: 1%;
-  font-size: 150%;
   align-self: center;
-  padding: 4%;
-  padding-left: .5%;
-  padding-right: .5%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
+  padding: 5%;
+  padding-left: 2%;
+  padding-right: .3%;
+  font-family: 'Roboto', sans-serif; 
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.25px;
   font-weight: 500;
+  font-size: 70%;
   color: #000;
   background-color: #fff;
   border: none;
@@ -173,8 +211,9 @@ p {
 }
 
 .facebook-button:hover {
-  background-color: #566fb8;
-  box-shadow: 0px 15px 20px rgba(86, 111, 184, 0.4);
+  background-color: #1d74f4
+;
+  box-shadow: 0px 15px 20px rgba(29, 116, 244, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
@@ -197,4 +236,42 @@ footer {
   color: #eeeeee;
   background-color: #333333;
   margin: 0;
+}
+
+@media screen and (max-width: 568px) {
+
+  .nav {
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbutton > a { /*need this... */
+    width: 100%;
+  }
+
+  .navbutton { /* ...and this to make vertical nav take up entire area when hovered */
+    width: 100%;
+    text-align: center;
+  }
+
+  .facebook {
+    flex-flow: column;
+  }
+
+  .facebook-words {
+    padding: 5%;
+  }
+
+  .facebook-button {
+    padding: 2%;
+    padding-right: 0; 
+    padding-left: 0.6%;
+    font-size: 25%;
+    letter-spacing: 2px;
+  }
+
+  .manfishing {
+  width: 100vw;
+}
 }
